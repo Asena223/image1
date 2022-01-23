@@ -80,7 +80,7 @@ class _WelcomePageState extends State<WelcomePage> {
   Widget _title() {
     return RichText(
       textAlign: TextAlign.center,
-      text: TextSpan(text: '9', style: TextStyle(fontSize: 30), children: [
+      text: TextSpan(text: '9', style: TextStyle(fontSize: 20), children: [
         TextSpan(
           text: 'ok',
           style: TextStyle(color: Colors.black, fontSize: 30),

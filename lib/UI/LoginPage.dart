@@ -56,31 +56,31 @@ class _LoginPageState extends State<LoginPage> {
       ),
     );
   }
-
-  Widget _submitButton() {
-    return Container(
-      width: MediaQuery.of(context).size.width,
-      padding: EdgeInsets.symmetric(vertical: 15),
-      alignment: Alignment.center,
-      decoration: BoxDecoration(
-          borderRadius: BorderRadius.all(Radius.circular(5)),
-          boxShadow: <BoxShadow>[
-            BoxShadow(
-                color: Colors.grey.shade200,
-                offset: Offset(2, 4),
-                blurRadius: 5,
-                spreadRadius: 2)
-          ],
-          gradient: LinearGradient(
-              begin: Alignment.centerLeft,
-              end: Alignment.centerRight,
-              colors: [Color(0xfffbb448), Color(0xfff7892b)])),
-      child: Text(
-        'Login',
-        style: TextStyle(fontSize: 20, color: Colors.white),
-      ),
-    );
-  }
+  //
+  // Widget _submitButton() {
+  //   return Container(
+  //     width: MediaQuery.of(context).size.width,
+  //     padding: EdgeInsets.symmetric(vertical: 15),
+  //     alignment: Alignment.center,
+  //     decoration: BoxDecoration(
+  //         borderRadius: BorderRadius.all(Radius.circular(5)),
+  //         boxShadow: <BoxShadow>[
+  //           BoxShadow(
+  //               color: Colors.grey.shade200,
+  //               offset: Offset(2, 4),
+  //               blurRadius: 5,
+  //               spreadRadius: 2)
+  //         ],
+  //         gradient: LinearGradient(
+  //             begin: Alignment.centerLeft,
+  //             end: Alignment.centerRight,
+  //             colors: [Color(0xfffbb448), Color(0xfff7892b)])),
+  //     child: Text(
+  //       'Login',
+  //       style: TextStyle(fontSize: 20, color: Colors.white),
+  //     ),
+  //   );
+  // }
 
   Widget _createAccountLabel() {
     return InkWell(
@@ -93,11 +93,20 @@ class _LoginPageState extends State<LoginPage> {
         padding: EdgeInsets.symmetric(vertical: 13),
         alignment: Alignment.center,
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.all(Radius.circular(5)),
-          border: Border.all(color: Colors.white, width: 2),
-        ),
+            borderRadius: BorderRadius.all(Radius.circular(5)),
+            boxShadow: <BoxShadow>[
+              BoxShadow(
+                  color: Colors.grey.shade200,
+                  offset: Offset(2, 4),
+                  blurRadius: 5,
+                  spreadRadius: 2)
+            ],
+            gradient: LinearGradient(
+                begin: Alignment.centerLeft,
+                end: Alignment.centerRight,
+                colors: [Color(0xfffbb448), Color(0xfff7892b)])),
         child: Text(
-          'Register now',
+          'Login',
           style: TextStyle(fontSize: 20, color: Colors.white),
         ),
       ),
@@ -159,13 +168,11 @@ class _LoginPageState extends State<LoginPage> {
                   SizedBox(height: 50),
                   _emailPasswordWidget(),
                   SizedBox(height: 20),
-                  _submitButton(),
+                  _createAccountLabel(),
                   Container(
                     padding: EdgeInsets.symmetric(vertical: 10),
                     alignment: Alignment.centerRight,
                   ),
-                  SizedBox(height: height * .055),
-                  _createAccountLabel(),
                 ],
               ),
             ),

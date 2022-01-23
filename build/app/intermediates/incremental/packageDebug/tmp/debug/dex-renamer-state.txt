@@ -1,4 +1,4 @@
-#Sun Jan 23 20:25:07 TRT 2022
+#Sun Jan 23 20:37:37 TRT 2022
 base.1=C\:\\Users\\CASPER\\Desktop\\ymgk\\image1-master\\image1-master\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes2.dex
 path.1=classes2.dex
 base.0=C\:\\Users\\CASPER\\Desktop\\ymgk\\image1-master\\image1-master\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
