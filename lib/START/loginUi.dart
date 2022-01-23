@@ -4,73 +4,77 @@ import 'package:ymgkproje/UI/home.page.dart';
 import '../foto.dart';
 import 'inputWidget.dart';
 
-class Login123Page extends StatefulWidget {
-  @override
-  _Login123PageState createState() => _Login123PageState();
-}
-
-class _Login123PageState extends State<Login123Page> {
+class Login123Page extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: <Widget>[
-        Padding(
-          padding:
-              EdgeInsets.only(top: MediaQuery.of(context).size.height / 2.3),
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Encryption/Decryption"),
+        flexibleSpace: Container(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.centerLeft,
+              end: Alignment.centerRight,
+              colors: <Color>[Colors.orange, Colors.black],
+            ),
+          ),
         ),
-        Column(
-          children: <Widget>[
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: <Widget>[
-                Stack(
-                  alignment: Alignment.bottomRight,
-                  children: <Widget>[
-                    InputWidget(30.0, 0.0),
-                  ],
-                ),
-              ],
-            ),
-            Padding(
-              padding: EdgeInsets.only(bottom: 0),
-            ),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => FotoEkle()));
-              },
-              style: ElevatedButton.styleFrom(
-                fixedSize: const Size(200, 60),
-                elevation: 10,
-                shape: new RoundedRectangleBorder(
-                  borderRadius: new BorderRadius.circular(30.0),
-                ),
+      ),
+      backgroundColor: Colors.orangeAccent,
+      body: Column(
+        children: <Widget>[
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              Stack(
+                alignment: Alignment.bottomRight,
+                children: <Widget>[
+                  InputWidget(30.0, 0.0),
+                ],
               ),
-              child: Text('Image Encryption'),
-            ),
-            Padding(
-              padding: EdgeInsets.only(bottom: 30),
-            ),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => HomePage()));
-              },
-              style: ElevatedButton.styleFrom(
-                fixedSize: const Size(200, 60),
-                elevation: 10,
-                shape: new RoundedRectangleBorder(
-                  borderRadius: new BorderRadius.circular(30.0),
-                ),
+            ],
+          ),
+          Padding(
+            padding: EdgeInsets.only(bottom: 0),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => FotoEkle()));
+            },
+            style: ElevatedButton.styleFrom(
+              fixedSize: const Size(200, 60),
+              elevation: 10,
+              shape: new RoundedRectangleBorder(
+                borderRadius: new BorderRadius.circular(30.0),
               ),
-              child: Text('Text Encryption'),
-            )
+            ),
+            child: Text('Image Encryption'),
+          ),
+          Padding(
+            padding: EdgeInsets.only(bottom: 30),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => HomePage()));
+            },
+            style: ElevatedButton.styleFrom(
+              fixedSize: const Size(200, 60),
+              elevation: 10,
+              shape: new RoundedRectangleBorder(
+                borderRadius: new BorderRadius.circular(30.0),
+              ),
+            ),
+            child: Text(
+              'Text Encryption',
+            ),
+          )
 
-            // roundedRectButton("Let's get Started", signInGradients, true),
-            // roundedRectButton("Create an Account", signUpGradients, false),
-          ],
-        )
-      ],
+          // roundedRectButton("Let's get Started", signInGradients, true),
+          // roundedRectButton("Create an Account", signUpGradients, false),
+        ],
+      ),
     );
   }
 }
@@ -113,13 +117,13 @@ class _Login123PageState extends State<Login123Page> {
 //     );
 //   });
 // }
-//ilk eklediğimde farklı renkler vermek için eklemiştim
-// const List<Color> imageGradients = [
-//   Color(0xFF0EDED2),
-//   Color(0xFF03A0FE),
-// ];
-//
-// const List<Color> textGradients = [
-//   Color(0xFFFF9945),
-//   Color(0xFFFc6076),
-// ];
+// ilk eklediğimde farklı renkler vermek için eklemiştim
+const List<Color> imageGradients = [
+  Color(0xFF0EDED2),
+  Color(0xFF03A0FE),
+];
+
+const List<Color> textGradients = [
+  Color(0xFFFF9945),
+  Color(0xFFFc6076),
+];
