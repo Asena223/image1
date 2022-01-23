@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">61539681858-1vv8u1mcqf5oo8mnnj9li0ppu7p2t57s.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">61539681858</string>
+    <string name="google_api_key" translatable="false">AIzaSyD2zHCtXg_PYB-QdsB_0qLDZ4nWr6imCDk</string>
+    <string name="google_app_id" translatable="false">1:61539681858:android:a9da73b0445a1c40d00fdb</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyD2zHCtXg_PYB-QdsB_0qLDZ4nWr6imCDk</string>
+    <string name="google_storage_bucket" translatable="false">oktaslogin.appspot.com</string>
+    <string name="project_id" translatable="false">oktaslogin</string>
+</resources>

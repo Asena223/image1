@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "61539681858",
+    "project_id": "oktaslogin",
+    "storage_bucket": "oktaslogin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:61539681858:android:a9da73b0445a1c40d00fdb",
+        "android_client_info": {
+          "package_name": "com.example.ymgkproje"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "61539681858-1vv8u1mcqf5oo8mnnj9li0ppu7p2t57s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2zHCtXg_PYB-QdsB_0qLDZ4nWr6imCDk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "61539681858-1vv8u1mcqf5oo8mnnj9li0ppu7p2t57s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
